@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khlifi&Ammeri Housing | Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="entete">
+      <nav class="navigation">
+        <a class="logo" href="index.html">Khlifi&Ammeri Housing<span>.</span></a>
+        <ul class="menu">
+          <li><a class="actif" href="index.html">Accueil</a></li>
+          <li><a href="logements.html">Logements</a></li>
+          <li><a href="compte.html">Mon compte</a></li>
+        </ul>
+        <a class="bouton bouton-petit" href="logements.html">Trouver un logement</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="haut">
+        <div class="hero-texte">
+          <p class="surtitre">Location simple en Tunisie</p>
+          <h1>Un séjour qui ressemble à chez vous.</h1>
+          <p>Découvre des appartements et des maisons à Tunis et dans le Grand Tunis.</p>
+          <a class="bouton" href="logements.html">Voir les logements</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/maison-marsa.svg" alt="Maison blanche avec terrasse à La Marsa" />
+        </div>
+      </section>
+
+      <section class="section recherche">
+        <h2>Tu cherches où ?</h2>
+        <form class="recherche-form" action="logements.html" method="get">
+          <label
+            >Ville ou quartier
+            <select name="ville">
+              <option value="tunis">Tunis</option>
+              <option value="marsa">La Marsa</option>
+              <option value="sidi-bou-said">Sidi Bou Saïd</option>
+              <option value="gammarth">Gammarth</option>
+            </select>
+          </label>
+          <label>Arrivée<input type="date" name="arrivee" /></label>
+          <label>Départ<input type="date" name="depart" /></label>
+          <button class="bouton" type="submit">Chercher</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <div class="titre-ligne">
+          <div>
+            <p class="surtitre">Nos idées pour toi</p>
+            <h2>Des logements appréciés</h2>
+          </div>
+          <a class="lien" href="logements.html">Tout voir →</a>
+        </div>
+        <div class="cartes">
+          <article class="carte">
+            <a href="logements.html"
+              ><img src="images/appartement-sidi.svg" alt="Appartement bleu à Sidi Bou Saïd"
+            /></a>
+            <div class="carte-texte">
+              <p class="lieu">Sidi Bou Saïd · Tunis</p>
+              <h3>Appartement Dar El Bahar</h3>
+              <p>Calme, lumineux, proche du village.</p>
+              <p class="prix">À partir de 160 DT <span>/ nuit</span></p>
+            </div>
+          </article>
+          <article class="carte">
+            <a href="logements.html"
+              ><img src="images/studio-tunis.svg" alt="Studio moderne dans le centre de Tunis"
+            /></a>
+            <div class="carte-texte">
+              <p class="lieu">Centre-ville · Tunis</p>
+              <h3>Studio Bab Bhar</h3>
+              <p>Pratique pour visiter la ville.</p>
+              <p class="prix">À partir de 95 DT <span>/ nuit</span></p>
+            </div>
+          </article>
+          <article class="carte">
+            <a href="logements.html"><img src="images/maison-gammarth.svg" alt="Maison avec jardin à Gammarth" /></a>
+            <div class="carte-texte">
+              <p class="lieu">Gammarth · Tunis</p>
+              <h3>Maison Jasmin</h3>
+              <p>Un jardin et un espace pour la famille.</p>
+              <p class="prix">À partir de 220 DT <span>/ nuit</span></p>
+            </div>
+          </article>
+        </div>
+        <p class="note">Les logements et les prix sont des exemples pour ce projet scolaire.</p>
+      </section>
+
+      <section class="bandeau">
+        <div>
+          <p class="surtitre">Ton prochain séjour commence ici</p>
+          <h2>Tu as trouvé ton endroit ?</h2>
+          <p>Crée ton compte et envoie une demande de réservation.</p>
+        </div>
+        <a class="bouton bouton-clair" href="compte.html">Créer un compte</a>
+      </section>
+    </main>
+
+    <footer class="pied">
+      <a class="logo logo-pied" href="index.html">Khlifi&Ammeri Housing<span>.</span></a>
+      <p>Un petit projet de Khalil Khalifi et Amine Ammari.</p>
+      <p>Grand Tunis, Tunisie · 2026</p>
+    </footer>
+  </body>
+</html>

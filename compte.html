@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khlifi&Ammeri Housing | Mon compte</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="entete">
+      <nav class="navigation">
+        <a class="logo" href="index.html">Khlifi&Ammeri Housing<span>.</span></a>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="logements.html">Logements</a></li>
+          <li><a class="actif" href="compte.html">Mon compte</a></li>
+        </ul>
+        <a class="bouton bouton-petit" href="logements.html">Voir les maisons</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-titre">
+        <p class="surtitre">Bienvenue chez Khlifi&Ammeri Housing</p>
+        <h1>Ton compte</h1>
+        <p>Inscris-toi pour demander un séjour, ou connecte-toi si tu as déjà un compte.</p>
+      </section>
+      <section class="section comptes">
+        <form class="formulaire" id="form-inscription" action="#" method="post">
+          <h2>Créer un compte</h2>
+          <div class="champ">
+            <label for="nom">Nom complet</label
+            ><input id="nom" name="nom" type="text" required minlength="2" placeholder="Exemple : Amine Ammari" />
+          </div>
+          <div class="champ">
+            <label for="email">Adresse email</label
+            ><input id="email" name="email" type="email" required placeholder="nom@exemple.tn" />
+          </div>
+          <div class="champ">
+            <label for="telephone">Téléphone</label
+            ><input id="telephone" name="telephone" type="tel" required placeholder="12 345 678" />
+          </div>
+          <div class="champ">
+            <label for="motdepasse">Mot de passe</label
+            ><input
+              id="motdepasse"
+              name="motdepasse"
+              type="password"
+              required
+              minlength="6"
+              placeholder="6 caractères minimum"
+            />
+          </div>
+          <fieldset>
+            <legend>Mon séjour</legend>
+            <div class="form-ligne">
+              <div class="champ">
+                <label for="arrivee">Date d'arrivée</label><input id="arrivee" name="arrivee" type="date" required />
+              </div>
+              <div class="champ">
+                <label for="nuits">Nombre de nuits</label
+                ><input id="nuits" name="nuits" type="number" min="1" max="30" value="2" required />
+              </div>
+            </div>
+            <div class="champ">
+              <label for="logement">Logement choisi</label
+              ><select id="logement" name="logement">
+                <option>Appartement Dar El Bahar - Sidi Bou Saïd</option>
+                <option>Studio Bab Bhar - Tunis centre</option>
+                <option>Maison Jasmin - Gammarth</option>
+              </select>
+            </div>
+          </fieldset>
+          <p class="message" id="message-inscription" aria-live="polite"></p>
+          <button class="bouton" type="submit">Envoyer ma demande</button>
+        </form>
+
+        <form class="formulaire formulaire-connexion" id="form-connexion" action="#" method="post">
+          <h2>Déjà inscrit ?</h2>
+          <div class="champ">
+            <label for="email-connexion">Adresse email</label
+            ><input id="email-connexion" name="email" type="email" required placeholder="nom@exemple.tn" />
+          </div>
+          <div class="champ">
+            <label for="password-connexion">Mot de passe</label
+            ><input
+              id="password-connexion"
+              name="motdepasse"
+              type="password"
+              required
+              minlength="6"
+              placeholder="Ton mot de passe"
+            />
+          </div>
+          <p class="message" id="message-connexion" aria-live="polite"></p>
+          <button class="bouton bouton-sombre" type="submit">Se connecter</button>
+        </form>
+      </section>
+    </main>
+    <footer class="pied">
+      <a class="logo logo-pied" href="index.html">Khlifi&Ammeri Housing<span>.</span></a>
+      <p>Un petit projet de Khalil Khalifi et Amine Ammari.</p>
+      <p>Grand Tunis, Tunisie · 2026</p>
+    </footer>
+  </body>
+</html>
