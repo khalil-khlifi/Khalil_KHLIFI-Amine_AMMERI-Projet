@@ -368,3 +368,116 @@ select {
 .logo-pied {
   font-size: 22px;
 }
+
+/* Ajouts pour le JavaScript : erreurs, apercu et mode sombre */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccd5d5;
+  border-radius: 6px;
+  font: inherit;
+}
+.choix {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.choix label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.choix input {
+  width: auto;
+}
+.erreur {
+  min-height: 1.2em;
+  margin-top: 4px;
+  color: #b91c1c;
+  font-size: 0.85rem;
+}
+.is-invalid {
+  border-color: #b91c1c !important;
+}
+.is-valid {
+  border-color: #16a34a !important;
+}
+#compteur-message,
+#apercu,
+#retour {
+  margin-top: 8px;
+  font-size: 14px;
+}
+#compteur-message.depasse,
+#retour {
+  color: #b91c1c;
+  font-weight: bold;
+}
+#apercu {
+  color: #087f8c;
+  font-weight: bold;
+}
+.carte.populaire {
+  border: 2px solid #d77b4b;
+}
+.bouton-secondaire {
+  background: #e8f1f5;
+  color: #173b57;
+}
+.bouton-secondaire:hover {
+  background: #cbdfe8;
+}
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+body.sombre {
+  background: #0b2447;
+  color: #f7faff;
+}
+body.sombre .section,
+body.sombre .page-titre,
+body.sombre .recherche {
+  background: #0b2447;
+}
+body.sombre .hero,
+body.sombre .bandeau,
+body.sombre .pied {
+  background: #102a54;
+}
+body.sombre .hero h1,
+body.sombre .page-titre h1,
+body.sombre .titre-ligne h2,
+body.sombre .formulaire h2,
+body.sombre .carte-texte h2,
+body.sombre .carte-texte h3 {
+  color: #f7faff;
+}
+body.sombre .hero-texte > p:not(.surtitre),
+body.sombre .page-titre > p:last-child {
+  color: #e8f1f5;
+}
+body.sombre .carte,
+body.sombre .formulaire {
+  background: #102a54;
+  border-color: #1e3a6b;
+}
+body.sombre .carte-texte p,
+body.sombre .champ label,
+body.sombre .recherche h2 {
+  color: #e8f1f5;
+}
+body.sombre input,
+body.sombre select,
+body.sombre textarea {
+  background: #0b2447;
+  color: #f7faff;
+  border-color: #1e3a6b;
+}
+body.sombre .formulaire fieldset {
+  border-color: #1e3a6b;
+}
+body.sombre .formulaire legend {
+  color: #f7faff;
+}
