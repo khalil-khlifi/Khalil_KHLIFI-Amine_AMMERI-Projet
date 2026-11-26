@@ -1,103 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khlifi&Ammeri Housing | Réservation</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header class="entete">
-      <nav class="navigation">
-        <a class="logo" href="index.html">Khlifi&Ammeri Housing<span>.</span></a>
-        <ul class="menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="logements.html">Logements</a></li>
-          <li><a class="actif" href="compte.html">Réservation</a></li>
-        </ul>
-        <a class="bouton bouton-petit" href="logements.html">Voir les maisons</a>
-      </nav>
-    </header>
-    <main>
-      <section class="page-titre">
-        <p class="surtitre">Ton séjour dans le Grand Tunis</p>
-        <h1>Demande une réservation</h1>
-        <p>Choisis un logement et écris-nous. C'est une démonstration de cours.</p>
-      </section>
-      <section class="section comptes">
-        <form class="formulaire" id="form" action="#" method="post">
-          <h2>Mes informations</h2>
-          <div class="form-ligne">
-            <div class="champ">
-              <label for="nom">Nom *</label>
-              <input id="nom" name="nom" type="text" placeholder="Ton nom" />
-              <div class="erreur" id="err-nom"></div>
-            </div>
-            <div class="champ">
-              <label for="prenom">Prénom *</label>
-              <input id="prenom" name="prenom" type="text" placeholder="Ton prénom" />
-              <div class="erreur" id="err-prenom"></div>
-            </div>
-          </div>
-          <div class="champ">
-            <label for="email">Email *</label>
-            <input id="email" name="email" type="email" placeholder="nom@exemple.tn" />
-            <div class="erreur" id="err-email"></div>
-          </div>
-          <div class="champ">
-            <label for="atelier">Logement choisi *</label>
-            <select id="atelier" name="logement">
-              <option value="">-- Choisir un logement --</option>
-              <option value="Appartement Dar El Bahar - Sidi Bou Saïd">Appartement Dar El Bahar - Sidi Bou Saïd</option>
-              <option value="Studio Bab Bhar - Tunis centre">Studio Bab Bhar - Tunis centre</option>
-              <option value="Maison Jasmin - Gammarth">Maison Jasmin - Gammarth</option>
-            </select>
-            <div class="erreur" id="err-atelier"></div>
-          </div>
-          <fieldset id="zone-niveau">
-            <legend>Type de séjour *</legend>
-            <div class="choix">
-              <label><input type="radio" name="niveau" value="Seul"> Seul</label>
-              <label><input type="radio" name="niveau" value="En couple"> En couple</label>
-              <label><input type="radio" name="niveau" value="En famille"> En famille</label>
-            </div>
-            <div class="erreur" id="err-niveau"></div>
-          </fieldset>
-          <div class="champ">
-            <label for="message">Message (maximum 300 caractères)</label>
-            <textarea id="message" name="message" rows="4" placeholder="Écris tes dates ou une question..."></textarea>
-            <div class="erreur" id="err-message"></div>
-            <p id="compteur-message">0 / 300 caractères</p>
-          </div>
-          <p id="apercu"></p>
-          <p id="retour" aria-live="polite"></p>
-          <div class="form-actions">
-            <button class="bouton" type="submit">Envoyer la demande</button>
-            <button class="bouton bouton-secondaire" type="reset">Vider</button>
-          </div>
-        </form>
-
-        <form class="formulaire formulaire-connexion" id="form-connexion" action="#" method="post">
-          <h2>Déjà inscrit ?</h2>
-          <p>La connexion est une petite démonstration.</p>
-          <div class="champ">
-            <label for="email-connexion">Adresse email</label>
-            <input id="email-connexion" name="emailConnexion" type="email" required placeholder="nom@exemple.tn" />
-          </div>
-          <div class="champ">
-            <label for="password-connexion">Mot de passe</label>
-            <input id="password-connexion" name="motdepasse" type="password" required minlength="6" placeholder="6 caractères minimum" />
-          </div>
-          <p class="message" id="message-connexion" aria-live="polite"></p>
-          <button class="bouton bouton-sombre" type="submit">Se connecter</button>
-        </form>
-      </section>
-    </main>
-    <footer class="pied">
-      <a class="logo logo-pied" href="index.html">Khlifi&Ammeri Housing<span>.</span></a>
-      <p>Un petit projet de Khalil Khalifi et Amine Ammari.</p>
-      <p>Grand Tunis, Tunisie · 2026</p>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khlifi & Ammari Housing | Réservation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="entete"><nav class="navigation">
+    <a class="logo" href="index.html">Khlifi &amp; Ammari Housing<span>.</span></a>
+    <ul class="menu"><li><a href="index.html">Accueil</a></li><li><a href="logements.html">Logements</a></li><li><a class="actif" href="compte.html">Réservation</a></li></ul>
+    <a class="bouton bouton-petit" href="logements.html">Voir les maisons</a>
+  </nav></header>
+  <main>
+    <section class="page-titre"><p class="surtitre">Grand Tunis</p><h1>Demande une réservation</h1><p>Remplis le formulaire. C'est une démonstration.</p></section>
+    <section class="section comptes">
+      <form class="formulaire" id="form" action="#" method="post">
+        <h2>Mes informations</h2>
+        <div class="form-ligne">
+          <div class="champ"><label for="nom">Nom *</label><input id="nom" name="nom" type="text" required><div class="erreur" id="err-nom"></div></div>
+          <div class="champ"><label for="prenom">Prénom *</label><input id="prenom" name="prenom" type="text" required><div class="erreur" id="err-prenom"></div></div>
+        </div>
+        <div class="champ"><label for="email">Email *</label><input id="email" name="email" type="email" required><div class="erreur" id="err-email"></div></div>
+        <div class="champ"><label for="logement">Logement *</label>
+          <select id="logement" name="logement" required>
+            <option value="">Choisir un logement</option><option value="Appartement Dar El Bahar">Appartement Dar El Bahar</option><option value="Studio Bab Bhar">Studio Bab Bhar</option><option value="Maison Jasmin">Maison Jasmin</option>
+          </select><div class="erreur" id="err-logement"></div>
+        </div>
+        <div class="form-ligne">
+          <div class="champ"><label for="arrivee">Date d'arrivée *</label><input id="arrivee" name="arrivee" type="date" required><div class="erreur" id="err-arrivee"></div></div>
+          <div class="champ"><label for="nuits">Nombre de nuits *</label><input id="nuits" name="nuits" type="number" min="1" max="30" value="2" required><div class="erreur" id="err-nuits"></div></div>
+        </div>
+        <fieldset id="zone-sejour"><legend>Type de séjour *</legend>
+          <div class="choix"><label><input type="radio" name="sejour" value="Seul">Seul</label><label><input type="radio" name="sejour" value="En couple">En couple</label><label><input type="radio" name="sejour" value="En famille">En famille</label></div>
+          <div class="erreur" id="err-sejour"></div>
+        </fieldset>
+        <div class="champ"><label for="message">Message (300 caractères maximum)</label><textarea id="message" name="message" rows="4"></textarea><div class="erreur" id="err-message"></div><p id="compteur-message">0 / 300 caractères</p></div>
+        <p id="apercu"></p><p id="retour" aria-live="polite"></p>
+        <button class="bouton" type="submit">Envoyer la demande</button>
+        <button class="bouton bouton-secondaire" type="reset">Vider</button>
+      </form>
+      <form class="formulaire formulaire-connexion" id="form-connexion" action="#" method="post">
+        <h2>Déjà inscrit ?</h2><p>La connexion est une démonstration.</p>
+        <div class="champ"><label for="email-connexion">Email</label><input id="email-connexion" name="emailConnexion" type="email" required></div>
+        <div class="champ"><label for="password-connexion">Mot de passe</label><input id="password-connexion" name="motdepasse" type="password" required minlength="6"></div>
+        <p class="message" id="message-connexion" aria-live="polite"></p><button class="bouton bouton-sombre" type="submit">Se connecter</button>
+      </form>
+    </section>
+  </main>
+  <footer class="pied"><a class="logo" href="index.html">Khlifi &amp; Ammari Housing<span>.</span></a><p>Projet de Khalil Khalifi et Amine Ammari · Grand Tunis</p></footer>
+</body>
 </html>
